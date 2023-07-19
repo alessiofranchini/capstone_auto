@@ -209,3 +209,8 @@
     max-height: 200px;
   }
 }
+
+.logo{
+  height: 60px;
+  object-fit: cover;
+}
