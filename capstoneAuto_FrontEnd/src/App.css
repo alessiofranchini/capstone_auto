@@ -1,0 +1,211 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* VIDEO HOME*/
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-height: 500px) {
+  .video-container {
+    padding-bottom: 0;
+    height: 500px;
+  }
+}
+
+.video-overlay {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+.custom-link-video {
+  display: inline-block;
+  padding: 5px 10px;
+  color: #fff;
+  font-size: 25px;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.custom-link-video:hover {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.arrow {
+  margin-left: 8px;
+  color: #fff;
+  font-size: 25px;
+  transition: color 0.3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .custom-link-video {
+    font-size: 10px;
+  }
+
+  .arrow {
+    font-size: 10px;
+  }
+}
+
+.video-overlay:hover .arrow {
+  color: rgba(0, 0, 0, 0.7); 
+}
+
+.carousel .carousel-image {
+  height: 500px;
+  object-fit: cover;
+}
+
+/* FOOTER */
+
+.footer {
+  background-color: #181818;
+}
+
+.list-footer {
+  list-style: none;
+  margin: 2em;
+  padding: 0;
+  color: white;
+}
+
+@media (max-width: 576px) {
+  .list-footer li {
+    margin: 0.5em;
+  }
+}
+
+/* NAVBAR */
+
+.nav-text {
+  color: white;
+  margin-right: 100px;
+}
+
+.nav-text:hover {
+  color: white;
+}
+
+
+.custom-navbar {
+  background-color: #181818;
+}
+
+.navbar-button {
+  background-color: #181818;
+  color: white;
+}
+
+.navbar-button .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.image {
+  height: 500px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-collezioni {
+  height: 300px;
+  object-fit: cover;
+}
+
+.collezioni-title {
+  margin: 10px;
+}
+
+.cliente-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url(/Users/alessiofranchini/Desktop/capstone/public/assets/img/wp6570956.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.cliente-form {
+  width: 400px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.413);
+}
+
+.car-link {
+  color: white;
+  text-decoration: none;
+}
+
+.car-link:hover .carousel-text {
+  color: black;
+}
+
+.carousel-text {
+  transition: color 0.3s ease-in-out;
+}
+
+.car-image {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: cover;
+}
+
+@media (max-width: 576px) {
+  .car-image {
+    max-height: 200px;
+  }
+}
