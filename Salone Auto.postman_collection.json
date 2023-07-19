@@ -1,0 +1,134 @@
+{
+	"info": {
+		"_postman_id": "09f7b904-6438-4f89-85e5-a2b2715065d6",
+		"name": "Salone Auto",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28604779"
+	},
+	"item": [
+		{
+			"name": "Clienti Test",
+			"item": [
+				{
+					"name": "Salva cliente",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nome\":\"Alessio\",\n    \"cognome\":\"Franchini\",\n    \"indirzzo\":\"test indirizzo 4 40210\",\n    \"email\":\"testemail@gmail.com\",\n    \"telefono\":\"340976554\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/clienti",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"clienti"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cerca tutti i clienti",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nome\":\"Alessio\",\n    \"cognome\":\"Franchini\",\n    \"indirzzo\":\"test indirizzo 4 40210\",\n    \"email\":\"testemail@gmail.com\",\n    \"telefono\":\"340976554\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/clienti",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"clienti"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Auto Test",
+			"item": [
+				{
+					"name": "Salva auto",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nome\":\"Alessio\",\n    \"cognome\":\"Franchini\",\n    \"indirzzo\":\"test indirizzo 4 40210\",\n    \"email\":\"testemail@gmail.com\",\n    \"telefono\":\"340976554\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/auto",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"auto"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cerca tutte le auto",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nome\":\"Alessio\",\n    \"cognome\":\"Franchini\",\n    \"indirzzo\":\"test indirizzo 4 40210\",\n    \"email\":\"testemail@gmail.com\",\n    \"telefono\":\"340976554\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/clienti",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"clienti"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
